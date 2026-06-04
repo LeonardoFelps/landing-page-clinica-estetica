@@ -3,6 +3,7 @@ const revealItems = document.querySelectorAll(".reveal");
 const counters = document.querySelectorAll("[data-counter]");
 const parallaxItems = document.querySelectorAll("[data-parallax]");
 const tiltItems = document.querySelectorAll("[data-tilt]");
+const videos = document.querySelectorAll("[data-video]");
 
 const setHeaderState = () => {
   header.classList.toggle("is-scrolled", window.scrollY > 24);
@@ -81,3 +82,33 @@ tiltItems.forEach((item) => {
     item.style.transform = "";
   });
 });
+
+const enableAvailableVideos = async () => {
+  await Promise.all(
+    Array.from(videos).map(async (video) => {
+      const sources = Array.from(video.querySelectorAll("source"));
+      const fallback = video.parentElement.querySelector(".video-fallback");
+
+      for (const source of sources) {
+        try {
+          const response = await fetch(source.src, { method: "HEAD" });
+
+          if (response.ok) {
+            video.hidden = false;
+            video.load();
+
+            if (fallback) {
+              fallback.hidden = true;
+            }
+
+            return;
+          }
+        } catch (error) {
+          // Keep the image fallback when the video file is not available.
+        }
+      }
+    })
+  );
+};
+
+enableAvailableVideos();
