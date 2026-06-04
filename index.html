@@ -3,17 +3,223 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page Clinica de Estetica</title>
+    <title>Lumea Aesthetic Clinic | Estetica Premium</title>
     <meta
       name="description"
-      content="Landing page moderna para clinica de estetica, criada como projeto de portfolio."
+      content="Landing page premium para clinica de estetica com design moderno, elementos 3D e efeitos de rolagem."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Lumea Aesthetic Clinic">
+        <span class="brand-mark">L</span>
+        <span>Lumea</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegacao principal">
+        <a href="#tratamentos">Tratamentos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="header-cta" href="https://wa.me/5500000000000" target="_blank" rel="noreferrer">
+        Agendar avaliacao
+      </a>
+    </header>
+
     <main>
-      <h1>Landing Page Clinica de Estetica</h1>
-      <p>Projeto em preparacao. Adicione as imagens em <code>assets/images</code>.</p>
+      <section class="hero section" id="inicio">
+        <div class="hero-orb hero-orb-one" data-parallax="0.16" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-two" data-parallax="-0.1" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <span class="eyebrow">Clinica estetica premium</span>
+          <h1>Beleza natural com tecnologia, cuidado e experiencia memoravel.</h1>
+          <p>
+            Uma landing page conceito para clinicas que desejam transmitir sofisticacao,
+            seguranca e conversao desde o primeiro contato.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contato">Agendar consulta</a>
+            <a class="btn btn-ghost" href="#tratamentos">Ver tratamentos</a>
+          </div>
+          <div class="metrics" aria-label="Indicadores da clinica">
+            <div>
+              <strong data-counter="1200">0</strong>
+              <span>atendimentos</span>
+            </div>
+            <div>
+              <strong data-counter="98">0</strong>
+              <span>% satisfacao</span>
+            </div>
+            <div>
+              <strong data-counter="14">0</strong>
+              <span>protocolos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-tilt>
+          <div class="hero-card glass-card">
+            <img src="assets/images/estetica01.jpg" alt="Recepcao elegante de clinica estetica" />
+          </div>
+          <div class="floating-card floating-card-top" data-parallax="0.22">
+            <span>Glow Plan</span>
+            <strong>Protocolo facial</strong>
+          </div>
+          <div class="floating-card floating-card-bottom" data-parallax="-0.18">
+            <span>Agenda</span>
+            <strong>Hoje, 15:30</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro" id="experiencia">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Experiencia completa</span>
+          <h2>Ambiente acolhedor, atendimento consultivo e tecnologia aplicada a cada detalhe.</h2>
+        </div>
+        <div class="experience-grid">
+          <article class="image-panel reveal">
+            <img src="assets/images/estetica02.jpg" alt="Sala de procedimento estetico moderna" />
+          </article>
+          <article class="feature-card reveal">
+            <span>01</span>
+            <h3>Avaliacao personalizada</h3>
+            <p>Protocolos definidos conforme objetivo, pele, rotina e historico de cada paciente.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>02</span>
+            <h3>Conforto premium</h3>
+            <p>Uma jornada visualmente limpa, elegante e pensada para gerar confianca.</p>
+          </article>
+          <article class="image-panel reveal">
+            <img src="assets/images/estetica04.jpg" alt="Cabine de atendimento estetico" />
+          </article>
+        </div>
+      </section>
+
+      <section class="section treatments" id="tratamentos">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Tratamentos em destaque</span>
+          <h2>Servicos apresentados em cards 3D com foco em desejo e conversao.</h2>
+        </div>
+        <div class="treatment-grid">
+          <article class="treatment-card reveal" data-tilt>
+            <img src="assets/images/estetica05.jpg" alt="Tratamento facial com equipamento estetico" />
+            <div>
+              <h3>Skin Glow</h3>
+              <p>Revitalizacao facial para textura, luminosidade e vico natural.</p>
+            </div>
+          </article>
+          <article class="treatment-card reveal" data-tilt>
+            <img src="assets/images/estetica08.jpg" alt="Procedimento facial minimamente invasivo" />
+            <div>
+              <h3>Harmonizacao sutil</h3>
+              <p>Procedimentos pensados para preservar expressao e realcar equilibrio.</p>
+            </div>
+          </article>
+          <article class="treatment-card reveal" data-tilt>
+            <img src="assets/images/estetica10.jpg" alt="Tratamento estetico masculino" />
+            <div>
+              <h3>Estetica masculina</h3>
+              <p>Cuidado facial moderno para pele, barba, olheiras e rejuvenescimento.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section results" id="resultados">
+        <div class="result-copy reveal">
+          <span class="eyebrow">Resultados reais</span>
+          <h2>Uma narrativa visual que transforma procedimento em percepcao de valor.</h2>
+          <p>
+            A secao de resultados combina imagem, texto e movimento para reforcar autoridade
+            sem deixar a pagina pesada.
+          </p>
+          <a class="btn btn-primary" href="#contato">Quero minha avaliacao</a>
+        </div>
+        <div class="before-after reveal" data-tilt>
+          <img src="assets/images/estetica11.jpg" alt="Comparativo visual de rejuvenescimento facial" />
+          <div class="scan-line" aria-hidden="true"></div>
+          <span>Antes / Depois</span>
+        </div>
+      </section>
+
+      <section class="section specialists">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Especialistas</span>
+          <h2>Autoridade humana para equilibrar a estetica futurista da pagina.</h2>
+        </div>
+        <div class="specialist-grid">
+          <article class="specialist-card reveal">
+            <img src="assets/images/estetica13.jpg" alt="Especialista segurando paleta de avaliacao estetica" />
+            <h3>Dra. Marina Leal</h3>
+            <p>Biomedica estetica especialista em protocolos faciais avancados.</p>
+          </article>
+          <article class="specialist-card reveal">
+            <img src="assets/images/estetica14.jpg" alt="Profissional estetica em ambiente de atendimento" />
+            <h3>Carolina Mendes</h3>
+            <p>Consultora de beleza com foco em experiencia e acompanhamento.</p>
+          </article>
+          <article class="specialist-card reveal">
+            <img src="assets/images/estetica07.jpg" alt="Profissional com equipamento estetico" />
+            <h3>Equipe Lumea</h3>
+            <p>Atendimento integrado para tratamentos seguros e consistentes.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Galeria sensorial</span>
+          <h2>Imagens com entrada suave para criar ritmo durante a rolagem.</h2>
+        </div>
+        <div class="gallery-grid">
+          <img class="reveal" src="assets/images/estetica.jpg" alt="Atendimento estetico facial" />
+          <img class="reveal" src="assets/images/estetica06.jpg" alt="Pele hidratada apos tratamento" />
+          <img class="reveal" src="assets/images/estetica09.jpg" alt="Paciente olhando resultado no espelho" />
+          <img class="reveal" src="assets/images/estetica12.jpg" alt="Resultado de lifting facial natural" />
+          <img class="reveal" src="assets/images/estetica15.jpg" alt="Tratamento estetico masculino com equipamento" />
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="testimonial-card reveal">
+          <p>
+            "A pagina transmite exatamente o que uma clinica premium precisa: confianca,
+            beleza, tecnologia e um caminho claro para agendar."
+          </p>
+          <strong>Projeto conceito para portfolio</strong>
+        </div>
+      </section>
+
+      <section class="section final-cta" id="contato">
+        <div class="cta-orb" aria-hidden="true"></div>
+        <div class="reveal">
+          <span class="eyebrow">Agendamento inteligente</span>
+          <h2>Pronta para converter visitantes em avaliacoes agendadas.</h2>
+          <p>
+            Layout estatico, responsivo e otimizado para GitHub Pages, com efeitos modernos
+            sem depender de frameworks.
+          </p>
+          <a class="btn btn-primary" href="https://wa.me/5500000000000" target="_blank" rel="noreferrer">
+            Chamar no WhatsApp
+          </a>
+        </div>
+      </section>
     </main>
+
+    <a class="whatsapp-float" href="https://wa.me/5500000000000" target="_blank" rel="noreferrer" aria-label="Chamar no WhatsApp">
+      WhatsApp
+    </a>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
-
