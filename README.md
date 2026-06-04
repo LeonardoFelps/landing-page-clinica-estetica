@@ -1,35 +1,43 @@
-# Landing Page Clínica de Estética
+# Lumea Aesthetic Clinic
 
-Projeto de landing page moderna para clínica de estética, criado como vitrine de portfólio.
+Landing page premium para uma clínica de estética fictícia, desenvolvida como projeto de portfólio com foco em visual moderno, experiência responsiva e apresentação profissional de serviços.
+
+## Acesse
+
+[Ver landing page publicada](https://leonardofelps.github.io/landing-page-clinica-estetica/)
+
+## Destaques
+
+- Layout responsivo para desktop, tablet e mobile
+- Hero visual com cards flutuantes e elementos 3D em CSS
+- Efeitos de rolagem, parallax sutil e animações de entrada
+- Cards de tratamentos com efeito 3D no hover
+- Seção de vídeos com embeds do Pinterest
+- Galeria, especialistas, resultados e chamada para WhatsApp
+- Projeto estático compatível com GitHub Pages
+
+## Tecnologias
+
+- HTML5
+- CSS3
+- JavaScript
+- GitHub Pages
 
 ## Estrutura
 
-- `index.html`: página principal
-- `assets/images`: coloque aqui as imagens do projeto
-- `assets/videos`: coloque aqui os vídeos do projeto
-- `assets/css`: estilos da landing page
-- `assets/js`: scripts da landing page
-
-## Imagens
-
-Coloque as imagens da clinica, tratamentos, ambiente, equipe e antes/depois em:
-
 ```text
-assets/images/
+.
++-- index.html
++-- assets/
+|   +-- css/
+|   |   +-- styles.css
+|   +-- js/
+|   |   +-- main.js
+|   +-- images/
+|   +-- videos/
++-- README.md
 ```
 
-## Videos
+## Observação
 
-A landing já possui dois espaços preparados para vídeos. Para exibir automaticamente, coloque os arquivos em:
-
-```text
-assets/videos/procedimento-01.mp4
-assets/videos/depoimento-01.mp4
-```
-
-Também é possível usar WebM com os mesmos nomes:
-
-```text
-assets/videos/procedimento-01.webm
-assets/videos/depoimento-01.webm
-```
+Os vídeos da landing são carregados por embed do Pinterest. Para uma versão sem marca de plataforma, o ideal é usar arquivos próprios em MP4/WebM e substituir os iframes por players nativos HTML5.
